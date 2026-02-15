@@ -1,0 +1,28 @@
+.video {
+    padding: 100px 0;
+    background-color: #F9FAFB;
+
+    &__content {
+        display: flex;
+        gap: 80px;
+        flex-direction: column;
+
+        &__title {
+            font-size: 35px;
+            font-family: cursive;
+            text-align: start;
+        }
+
+        &__elements {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            video {
+                text-align: center;
+                width: 1000px;
+                // height: 400px;
+            }
+        }
+    }
+}
