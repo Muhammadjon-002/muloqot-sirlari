@@ -43,6 +43,27 @@
                     }
                 }
             }
+            @media (max-width:991px) {
+                flex-direction: column;
+                position: fixed;
+                background-color: #60A5FA;
+                top: 100px;
+                right: -100%;
+                padding: 20px;
+                width: 70vw;
+                height: 100vh;
+                transition: all .3s ease;
+            }
+        }
+        &__btn {
+            @media (max-width:991px) {
+                display: block;
+                font-size: 20px;
+            }
         }
     }
+}
+
+.act {
+    right: 0 !important;
 }

@@ -6,7 +6,7 @@
         flex-direction: column;
         gap: 80px;
         &__title {
-            font-size: 35px;
+            @include title(900, black);
             font-weight: 900;
             font-family: cursive;
         }
@@ -60,6 +60,9 @@
                 }
                 &:nth-child(6) p {
                     background-color: #8B5CF6;
+                }
+                @media (max-width:575px) {
+                    min-width: 300px;
                 }
             }
         }

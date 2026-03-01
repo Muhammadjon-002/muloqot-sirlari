@@ -1,0 +1,8 @@
+@mixin title($weight, $color) {
+    font-size: 35px;
+    font-weight: $weight;
+    color: $color;
+    @media (max-width:575px) {
+        font-size: 25px;
+    }
+}

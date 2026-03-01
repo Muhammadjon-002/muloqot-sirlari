@@ -7,7 +7,7 @@
         flex-direction: column;
         gap: 80px;
         &__title {
-            font-size: 35px;
+            @include title(900, black);
             font-family: cursive;
             font-weight: 900;
         }
@@ -62,8 +62,10 @@
                 &:nth-child(10) {
                     background-color: rgba(255, 68, 0, 0.545);
                 }
-
-            }
+                @media (max-width:575px) {
+                    min-width: 300px;
+                }
+             }
         }
     }
 }
